@@ -10,7 +10,6 @@ import 'rxjs/add/operator/map';
 export class HomePage {
 
   results: any;
-  dates: any;
 
   constructor(public navCtrl: NavController, public http: Http) {
 
@@ -22,13 +21,4 @@ export class HomePage {
       }
     );
   }
-
-  cleanText(title) {
-    return title.replace("Results for", "<br>");
-  }
-
-  animateNumbers(numbers) {
-
-  }
-
 }
